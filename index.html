@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            h2,table{
+                font-size:3rem;
+                text-align:center;
+            }
+            td{
+                font-size:2rem;
+                text-align:center;
+                border:1px solid black;
+                padding:0.5rem;
+            }
+            table{
+                margin:0 auto;
+                padding-top:2rem;
+                table-layout:fixed;
+                width:100%;
+            }
+            .jpName{
+                font-size:9px;
+                font-weight:bold;
+                color:blue;
+            }
+        </style>
+    <script>
+        window.onload = init;
+        function init(){
+            let elements = document.querySelectorAll("span.jpName");
+            for(i=0;i<elements.length;i++){
+                let m = elements[i];
+                m.answer = m.textContent;
+                m.textContent = "______";
+                m.onclick = function(e){
+                    e.target.textContent = e.target.answer;
+                };
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <h2>元素記号</h2>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>H</br><span class="jpName">すいそ</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>He</br><span class="jpName">へりうむ</span></td>
+            </tr>
+            <tr>
+                <td>Li</br><span class="jpName">りちうむ</span></td>
+                <td>Be</br><span class="jpName">べりりうむ</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>B</br><span class="jpName">ほうそ</span></td>
+                <td>C</br><span class="jpName">たんそ</span></td>
+                <td>N</br><span class="jpName">ちっそ</span></td>
+                <td>O</br><span class="jpName">さんそ</span></td>
+                <td>F</br><span class="jpName">ふっそ</span></td>
+                <td>Ne</br><span class="jpName">ねおん</span></td>
+            </tr>
+            <tr>
+                <td>Na</br><span class="jpName">なとりうむ</span></td>
+                <td>Mg</br><span class="jpName">まぐねしうむ</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Al</br><span class="jpName">あるみにうむ</span></td>
+                <td>Si</br><span class="jpName">けいそ</span></td>
+                <td>P</br><span class="jpName">りん</span></td>
+                <td>S</br><span class="jpName">いおう</span></td>
+                <td>Cl</br><span class="jpName">えんそ</span></td>
+                <td>Ar</br><span class="jpName">あるごん</span></td>
+            </tr>
+            <tr>
+                <td>K</br><span class="jpName">かりうむ</span></td>
+                <td>Ca</br><span class="jpName">かるしうむ</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>
